@@ -2,7 +2,7 @@
 # Misc Configuration
 
 envConfig = process.env
-githubAuthString = "client_id=#{envConfig.BALUPTON_GITHUB_CLIENT_ID}&client_secret=#{envConfig.BALUPTON_GITHUB_CLIENT_SECRET}"
+githubAuthString = "client_id=#{envConfig.DOCPAD_GITHUB_CLIENT_ID}&client_secret=#{envConfig.DOCPAD_GITHUB_CLIENT_SECRET}"
 
 # =================================
 # DocPad Configuration
@@ -212,14 +212,8 @@ module.exports =
 	plugins:
 		feedr:
 			feeds:
-				'stackoverflow-profile':
-					url: 'http://api.stackoverflow.com/1.0/users/328130/'
-				'github-australia-javascript':
-					url: "https://api.github.com/legacy/user/search/location:Australia%20language:JavaScript?#{githubAuthString}"
-				'github-australia':
-					url: "https://api.github.com/legacy/user/search/location:Australia?#{githubAuthString}"
 				'github-profile':
-					url: "https://api.github.com/users/balupton?#{githubAuthString}"
+					url: "https://api.github.com/users/toshb?#{githubAuthString}"
 				'toshb-projects':
 					url: "https://api.github.com/users/toshb/repos?per_page=100&#{githubAuthString}"
 				'github':
