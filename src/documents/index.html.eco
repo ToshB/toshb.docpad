@@ -4,7 +4,7 @@ layout: 'page'
 ---
 
 <section class="pitch">
-	<h2>Pitch</h2>
+	<!--h2>Pitch</h2>
 
 	<p>blabla</p>
 
@@ -12,5 +12,5 @@ layout: 'page'
 
 	<div class="more-to-read">
 		<p>sdfsd</p>
-	</div>
+	</div-->
 </section>
