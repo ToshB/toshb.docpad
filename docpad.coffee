@@ -23,7 +23,7 @@ module.exports =
 			author: "Torstein Bjørnstad"
 			email: "tosh@tosh.no"
 			description: """
-				Website of Torstein Bjørnstad. .NET Consulant at Webstep AS.
+				Website of Torstein Bjørnstad. .NET Consultant at Webstep AS.
 				"""
 			keywords: """
 				tosh, toshb, torstein bjørnstad, c#, javascript
