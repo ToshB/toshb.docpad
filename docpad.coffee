@@ -123,7 +123,7 @@ module.exports =
 					title: 'Visit Website'
 				source:
 					text: 'open-source'
-					url: 'https://github.com/balupton/balupton.docpad'
+					url: 'https://github.com/toshb/toshb.docpad'
 					title: 'View Website Source'
 				contact:
 					text: 'Contact'
