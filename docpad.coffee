@@ -75,9 +75,9 @@ module.exports =
 				""".trim().split('\n')
 
 			feeds: [
-					#href: 'http://feeds.feedburner.com/toshb.atom'
-					#title: 'Blog Posts'
-				#,
+					href: 'http://feeds.feedburner.com/toshb.atom'
+					title: 'Blog Posts'
+				,
 					href: 'https://github.com/toshb.atom'
 					title: 'GitHub Activity'
 				,
