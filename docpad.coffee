@@ -54,20 +54,12 @@ module.exports =
 					'''
 
 			services:
-				#facebookLikeButton:
-				#	applicationId: '266367676718271'
-				#facebookFollowButton:
-				#	applicationId: '266367676718271'
-				#	username: 'balupton'
 				twitterTweetButton: "ToshB"
 				twitterFollowButton: "ToshB"
 				githubFollowButton: "ToshB"
-				#quoraFollowButton: "Benjamin-Lupton"
 				disqus: 'toshb'
-				#gauges: '5077ae93f5a1f5067b000028'
-				googleAnalytics: 'UA-16411848-2'
-				#reinvigorate: '52uel-236r9p108l'
-
+				googleAnalytics: 'UA-16411848-1'
+				
 			social:
 				"""
 				facebook
@@ -169,11 +161,11 @@ module.exports =
 			# Server Configuration
 
 			# Redirect Middleware
-			#docpadServer.use (req,res,next) ->
-			#	if req.headers.host in ['www.balupton.com','lupton.cc','www.lupton.cc','balupton.no.de','tosh.herokuapp.com']
-			#		res.redirect 301, 'http://balupton.com'+req.url
-			#	else
-			#		next()
+			docpadServer.use (req,res,next) ->
+				if req.headers.host in ['www.tosh.no','tosh-web.herokuapp.com']
+					res.redirect 301, 'http://tosh.no'+req.url
+				else
+					next()
 
 			# ---------------------------------
 			# Server Extensions
@@ -196,15 +188,7 @@ module.exports =
 			# Twitter
 			#docpadServer.get /^\/(?:t|twitter|tweet)(?:\/(.*))?$/, (req, res) ->
 			#	res.redirect 301, "https://twitter.com/toshb"
-
-			# Sharing Feed
-			#docpadServer.get /^\/feeds?\/shar(e|ing)(?:\/(.*))?$/, (req, res) ->
-			#	res.redirect 301, "http://feeds.feedburner.com/balupton/shared"
-
-			# Feeds
-			#docpadServer.get /^\/feeds?(?:\/(.*))?$/, (req, res) ->
-			#	res.redirect 301, "http://feeds.feedburner.com/balupton"
-
+			
 
 	# =================================
 	# Plugin Configuration
@@ -220,8 +204,4 @@ module.exports =
 					url: "https://github.com/toshb.atom"
 				'twitter':
 					url: "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=toshb&count=20&include_entities=true&include_rts=true"
-				#'vimeo':
-				#	url: "http://vimeo.com/api/v2/balupton/videos.json"
-				#'flickr':
-				#	url: "http://api.flickr.com/services/feeds/photos_public.gne?id=35776898@N00&lang=en-us&format=json"
 
