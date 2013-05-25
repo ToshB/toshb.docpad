@@ -16,15 +16,15 @@
     "Torstein Bjørnstad <tosh@tosh.no> (http://tosh.no)"
   ],
   "bugs": {
-    "url": "https://github.com/ToshB/toshb.github.com/issues"
+    "url": "https://github.com/ToshB/toshb.docpad/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ToshB/toshb.github.com.git"
+    "url": "https://github.com/ToshB/toshb.docpad.git"
   },
   "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
+    "node": "0.10",
+    "npm": "1.2"
   },
   "dependencies": {
     "docpad": "6.x",
